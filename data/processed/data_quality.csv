@@ -1,0 +1,2 @@
+n_events,pct_events_no_session_id,pct_events_with_session_medium,pct_medium_obfuscated,pct_no_device,purchase_events,distinct_txn_ids,purchases_missing_txn_id,purchases_null_revenue,total_revenue_usd
+4295584,0.0,0.33504501366985256,0.21217115065145972,0.0,5692,4452,906,0,362165.0
