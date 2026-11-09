@@ -19,4 +19,9 @@ Of 77,030 sessions that viewed a product, only 19.7% added to cart, so about 61,
 
 ![Closed funnel](reports/figures/01_funnel_closed.png)
 
+### 2. Paid Search shoppers stall between cart and checkout.
+Paid search sessions that add to cart reach checkout 23.2% of the time, vs 37.3% for Organic Search (-14.1 pts, 95% CI -19.1 to -9.1, BH-adjusted p < 0.001, Cohen's h = -0.31). End to end, Paid Search converts at less than half the Organic rate (1.4% vs 3.2% view to purchase). Direct (-9.5 pts) and unattributed traffic (-7.1 pts) also lag at this step, while Referral is the strongest channel at checkout (62.7% completion vs 46.1%).
+
+![Channel gap at cart to checkout](reports/figures/04_forest_channel_cart.png)
+
 
