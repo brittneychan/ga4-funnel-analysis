@@ -17,6 +17,7 @@
 ### 1. Only 1 in 5 product viewing sessions add to cart, making it the largest leak in the funnel.
 Of 77,030 sessions that viewed a product, only 19.7% added to cart, so about 61,900 sessions were lost at that step. Later steps convert much better: 35% of carts reach checkout and 52% checkouts complete. End to end, 3.6% of product-viewing sessions buy in order.
 
-![Closed funnel] (reports/figures/01-funnel_closed.png)
+![Closed funnel]
+(reports/figures/01_funnel_closed.png)
 
 
