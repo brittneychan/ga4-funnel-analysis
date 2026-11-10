@@ -24,4 +24,6 @@ Paid search sessions that add to cart reach checkout 23.2% of the time, vs 37.3%
 
 ![Channel gap at cart to checkout](reports/figures/04_forest_channel_cart.png)
 
+### 3. Buying a product takes multiple visits, and returning visitors convert about 3x better.
+Returning visitors convert at 6.7% from product view to purchase, vs 2.1% for new visitors, and complete checkout 62.5% of the time vs 41.4 (+21.1 pts, 95% CI 18.5 to 23.8, h = 0.43, the largest effect in the data). Purchasers average 3.6 sessions vs 1.3 for non-purchasers. About half of checkout sessions (52%) skip earlier funnel steps in that same visit, which suggests shoppers add to cart on one visit and come back later to buy.
 
