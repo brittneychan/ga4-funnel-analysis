@@ -27,3 +27,24 @@ Paid search sessions that add to cart reach checkout 23.2% of the time, vs 37.3%
 ### 3. Buying a product takes multiple visits, and returning visitors convert about 3x better.
 Returning visitors convert at 6.7% from product view to purchase, vs 2.1% for new visitors, and complete checkout 62.5% of the time vs 41.4 (+21.1 pts, 95% CI 18.5 to 23.8, h = 0.43, the largest effect in the data). Purchasers average 3.6 sessions vs 1.3 for non-purchasers. About half of checkout sessions (52%) skip earlier funnel steps in that same visit, which suggests shoppers add to cart on one visit and come back later to buy.
 
+### 4. Device isn't the problem
+Mobile and tablet show no statistically significant difference from desktop at any funnel step. Mobile checkout abandonment is 0.96x desktop's (95% CI 0.91-1.02), so a mobile checkout redesign is not supported by this data. 
+
+![Device gap at checkout](reports/figures/04_forest_device_checkout.png)
+
+## Recommendations
+| # | Recommendation | Evidence | Est. impact (quarter) | How to validate |
+|---|---|---|---|---|
+| 1 | Audit the Paid Search journey: check that ads land on matching product pages, and test the cart page for paid traffic (e.g. surface shipping costs earlier) | Paid Search cart → checkout 14.1 pts below Organic, significant | ~7 extra orders, ~$460 at 50% gap closure (range $230–$925); modest because Paid Search is low-volume in this sample | A/B test on Paid Search traffic; primary metric cart → checkout |
+| 2 | Bring new visitors back: keep carts across visits and send cart-reminder emails / showing products again | Returning visitors convert ~3x new; ~half of checkouts happen without a cart add in visit | Not sized | Holdout test on cart-reminder emails; metric 7-day return-and-purchase rate |
+| 3 | Do not prioritize mobile checkout design | No significant device gap; mobile abandonment 0.96x desktop (CI includes 1) | Avoided cost | Re-check after the next quarter of data |
+
+## Approach
+```mermaid
+flowchart LR
+  A["GA4 public dataset<br/>events_* (raw, nested)"] --> B["stg: events_flat"]
+  B --> C["int: sessions<br/>step timestamps, channel"]
+  C --> D["marts: funnel_overall,<br/>funnel_users, funnel_by_segment"]
+  D --> E["Python: significance tests,<br/>revenue sizing"]
+  E --> F["Findings + recommendations"]
+```
