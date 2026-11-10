@@ -2,5 +2,5 @@
 tables:
 	python -m src.build_tables
 test:
-	pytest -q
+	python -m pytest -q
 	
